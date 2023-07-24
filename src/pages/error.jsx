@@ -2,7 +2,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { useTheme } from "@mui/material";
+import { useTheme, Typography } from "@mui/material";
 
 function error() {
   const { i18n } = useTranslation();
@@ -23,7 +23,7 @@ function error() {
           />
         </Helmet>
         <main id="main">
-
+          <Typography variant="h2" color="red">Error 404</Typography>
         </main>
       </div>
     </>
